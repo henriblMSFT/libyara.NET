@@ -19,14 +19,14 @@
   </metadata>
   <files>
     <!-- Runtime libraries for x86 -->
-    <file src="Release\*.dll" target="build\x86" />
-    <file src="Release\*.pdb" target="build\x86" />
-    <file src="Release\*.xml" target="build\x86" />
+    <file src="Release\net46\*.dll" target="build\x86" />
+    <file src="Release\net46\*.pdb" target="build\x86" />
+    <file src="Release\net46\*.xml" target="build\x86" />
 
     <!-- Runtime libraries for x64 -->
-    <file src="x64\Release\*.dll" target="build\x64" />
-    <file src="x64\Release\*.pdb" target="build\x64" />
-    <file src="x64\Release\*.xml" target="build\x64" />
+    <file src="x64\Release\net46\*.dll" target="build\x64" />
+    <file src="x64\Release\net46\*.pdb" target="build\x64" />
+    <file src="x64\Release\net46\*.xml" target="build\x64" />
 
     <file src="Microsoft.O365.Security.Native.libyara.NET.props" target="build\net46\" />
   </files>

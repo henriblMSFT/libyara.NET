@@ -18,8 +18,11 @@
     <tags>yara libyara virustotal</tags>
   </metadata>
   <files>
-    <file src="x64\Release\*.dll" target="lib\net46\" />
-    <file src="x64\Release\*.pdb" target="lib\net46\" />
-    <file src="x64\Release\*.xml" target="lib\net46\" />
+    <file src="x64\Release\net46\*.dll" target="lib\net46\" />
+    <file src="x64\Release\net46\*.pdb" target="lib\net46\" />
+    <file src="x64\Release\net46\*.xml" target="lib\net46\" />
+    <file src="x64\Release\net5.0\*.dll" target="lib\net5.0\" />
+    <file src="x64\Release\net5.0\*.pdb" target="lib\net5.0\" />
+    <file src="x64\Release\net5.0\*.xml" target="lib\net5.0\" />
   </files>
 </package>
