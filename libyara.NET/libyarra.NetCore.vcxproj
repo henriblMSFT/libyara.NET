@@ -22,9 +22,12 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{83940DC9-61FD-4D99-BB82-2BF9818A7527}</ProjectGuid>
     <Keyword>NetCoreCProj</Keyword>
+    <TargetName>libyara.NET</TargetName>
     <RootNamespace>libyaraNET</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
+    <ReadOnlyProject>true</ReadOnlyProject>
+    <ReplaceWildcardsInProjectItems>true</ReplaceWildcardsInProjectItems>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -80,24 +83,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkDelaySign>true</LinkDelaySign>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
-    <TargetName>libyara.NET</TargetName>
+    <OutDir>$(SolutionDir)$(Configuration)\net5.0\</OutDir>
+    <IntDir>$(Configuration)_netcore\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkDelaySign>true</LinkDelaySign>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
-    <TargetName>libyara.NET</TargetName>
+    <OutDir>$(SolutionDir)$(Configuration)\net5.0\</OutDir>
+    <IntDir>$(Configuration)_netcore\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkDelaySign>true</LinkDelaySign>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net6.0</OutDir>
-    <TargetName>libyara.NET</TargetName>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net5.0\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_netcore\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkDelaySign>true</LinkDelaySign>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net6.0</OutDir>
-    <TargetName>libyara.NET</TargetName>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net5.0\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_netcore\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -140,22 +145,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\libyara.Net\Compiler.h" />
-    <ClInclude Include="..\libyara.Net\Exceptions.h" />
-    <ClInclude Include="..\libyara.Net\FileWrapper.h" />
-    <ClInclude Include="..\libyara.Net\GCHandleWrapper.h" />
-    <ClInclude Include="..\libyara.Net\QuickScan.h" />
-    <ClInclude Include="..\libyara.Net\ScanResult.h" />
-    <ClInclude Include="..\libyara.Net\YaraTypes.h" />
-    <ClInclude Include="..\libyara.Net\Match.h" />
-    <ClInclude Include="..\libyara.Net\Rule.h" />
-    <ClInclude Include="..\libyara.Net\Rules.h" />
-    <ClInclude Include="..\libyara.Net\YaraContext.h" />
-    <ClInclude Include="..\libyara.Net\Scanner.h" />
+    <ClInclude Include="*.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\libyara.Net\AssemblyInfo.cpp" />
-    <ClCompile Include="..\libyara.Net\Main.cpp" />
+    <ClCompile Include="*.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

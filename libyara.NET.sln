@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{6D09F9D4-8B58-4BFC-BD58-16A66ADC2625}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libyarra.NetCore", "libyarra.NetCore\libyarra.NetCore.vcxproj", "{83940DC9-61FD-4D99-BB82-2BF9818A7527}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libyarra.NetCore", "libyara.NET\libyarra.NetCore.vcxproj", "{83940DC9-61FD-4D99-BB82-2BF9818A7527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

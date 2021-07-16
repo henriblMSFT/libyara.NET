@@ -138,6 +138,7 @@ namespace libyaraNET {
             void* userData)
         {
             UNREFERENCED_PARAMETER(errorLevel);
+            UNREFERENCED_PARAMETER(rule);
             UNREFERENCED_PARAMETER(userData);
 
             auto msg = String::Format("{0} on line {1} in file: {2}",

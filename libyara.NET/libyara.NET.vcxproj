@@ -81,25 +81,25 @@
     <LinkIncremental>true</LinkIncremental>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
     <LinkDelaySign>true</LinkDelaySign>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net46</OutDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net46\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
     <LinkDelaySign>true</LinkDelaySign>
-    <OutDir>$(SolutionDir)$(Configuration)\net46</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\net46\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
     <LinkDelaySign>true</LinkDelaySign>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net46</OutDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\net46\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <LinkKeyFile>$(SolutionDir)35MSSharedLib1024.snk</LinkKeyFile>
     <LinkDelaySign>true</LinkDelaySign>
-    <OutDir>$(SolutionDir)$(Configuration)\net46</OutDir>
+    <OutDir>$(SolutionDir)$(Configuration)\net46\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
